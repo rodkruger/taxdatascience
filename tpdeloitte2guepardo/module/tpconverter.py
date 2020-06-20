@@ -109,6 +109,7 @@ def make_conversion(origin_file, target_folder):
         # Get the Block Key (X200, X300, X310, etc)
         block_key = line_data[1]
 
+        # If there is no block key, there is nothing to do. Continue!
         if not block_key:
             continue
 
