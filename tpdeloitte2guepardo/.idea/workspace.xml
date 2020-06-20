@@ -84,21 +84,56 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="406" key="GridCell.Tab.0.bottom" timestamp="1592656732721">
+    <state width="1734" height="466" key="DebuggerActiveHint" timestamp="1592670575159">
       <screen x="1366" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="406" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592656732721" />
-    <state width="2539" height="406" key="GridCell.Tab.0.center" timestamp="1592656732721">
+    <state width="1734" height="466" key="DebuggerActiveHint/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592670575159" />
+    <state width="2539" height="449" key="GridCell.Tab.0.bottom" timestamp="1592671732652">
       <screen x="1366" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="406" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592656732721" />
-    <state width="2539" height="406" key="GridCell.Tab.0.left" timestamp="1592656732721">
+    <state width="2539" height="449" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671732652" />
+    <state width="2539" height="449" key="GridCell.Tab.0.center" timestamp="1592671732652">
       <screen x="1366" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="406" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592656732721" />
-    <state width="2539" height="406" key="GridCell.Tab.0.right" timestamp="1592656732721">
+    <state width="2539" height="449" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671732652" />
+    <state width="2539" height="449" key="GridCell.Tab.0.left" timestamp="1592671732652">
       <screen x="1366" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="406" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592656732721" />
+    <state width="2539" height="449" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671732652" />
+    <state width="2539" height="449" key="GridCell.Tab.0.right" timestamp="1592671732652">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="449" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671732652" />
+    <state width="2539" height="498" key="GridCell.Tab.1.bottom" timestamp="1592671508713">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="498" key="GridCell.Tab.1.bottom/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671508713" />
+    <state width="2539" height="498" key="GridCell.Tab.1.center" timestamp="1592671508713">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="498" key="GridCell.Tab.1.center/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671508713" />
+    <state width="2539" height="498" key="GridCell.Tab.1.left" timestamp="1592671508713">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="498" key="GridCell.Tab.1.left/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671508713" />
+    <state width="2539" height="498" key="GridCell.Tab.1.right" timestamp="1592671508713">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="498" key="GridCell.Tab.1.right/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592671508713" />
+    <state x="2332" y="547" key="com.intellij.ide.util.TipDialog" timestamp="1592661870407">
+      <screen x="1366" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2332" y="547" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592661870407" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/module/tpconverter.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
