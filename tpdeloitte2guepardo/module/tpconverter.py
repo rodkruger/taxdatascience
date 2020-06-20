@@ -104,7 +104,7 @@ def make_conversion(origin_file, target_folder):
     for line in file:
 
         # Read the raw line data
-        line_data = line.split("|")
+        line_data = line.split(SEPARATOR)
 
         # Get the Block Key (X200, X300, X310, etc)
         block_key = line_data[1]
@@ -121,11 +121,25 @@ def make_conversion(origin_file, target_folder):
         if block_key in blocks:
             block_data = blocks[block_key]
 
+        # A particular situation in Block X300. It is need to propagate into its
+        # sequentially down child the X300 index. So, we keep the value here, to
+        # propagate the same index into the immediatelly down childs
+        if block_key == "X300":
+            x300_index = line_data[2]
+
+        # In the block X310, we propagate the X300 index in the childs
+        if block_key == "X310":
+            line_data.insert(2, x300_index)
+
         # Append the raw line data into the dictionary block
         block_data.append(line_data)
 
         # Update the dictionary with new data
         blocks[block_key] = block_data
+
+        # Keep the last Block Key, to control the indexes of the Block X300
+        # and X310
+        previous_block_key = block_key
 
     return blocks
 
