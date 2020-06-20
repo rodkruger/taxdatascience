@@ -18,6 +18,12 @@ __status__ = "Production"
 import mimetypes
 import os.path
 
+###############################################################################
+# --- CONSTANTS
+###############################################################################
+
+SEPARATOR = '|'
+
 
 ###############################################################################
 # --- GLOBAL VARIABLES
@@ -79,7 +85,7 @@ def export_data_to_file(blocks, target_folder):
 
         # Write all the records in the list to the file
         for line_data in block_data:
-            file.write("|".join(line_data))
+            file.write(SEPARATOR.join(line_data))
 
 
 def make_conversion(origin_file, target_folder):
