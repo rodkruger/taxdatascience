@@ -12,27 +12,27 @@ __maintainer__ = "Rodrigo Krüger/FH Consulting"
 __email__ = "rodrigo.kruger@fh.com.br"
 __status__ = "Production"
 
-###############################################################################
+#######################################################################################################################
 # --- IMPORT MODULES
-###############################################################################
+#######################################################################################################################
 import mimetypes
 import os.path
 
-###############################################################################
+#######################################################################################################################
 # --- CONSTANTS
-###############################################################################
+#######################################################################################################################
 
 SEPARATOR = '|'
 
 
-###############################################################################
+#######################################################################################################################
 # --- GLOBAL VARIABLES
-###############################################################################
+#######################################################################################################################
 
 
-###############################################################################
+#######################################################################################################################
 # --- FUNCTIONS DEFINITIONS
-###############################################################################
+#######################################################################################################################
 
 def check_source_file_type(origin_file):
     """ Check if the source file is a text/file """
@@ -115,15 +115,13 @@ def make_conversion(origin_file, target_folder):
         # Assume that there is no data into the corresponding line
         block_data = []
 
-        # If the corresponding key is present in the dictionary, that means
-        # there is information present there that needs to be appended. If no,
-        # a blank list is already initialized in the previous statement
+        # If the corresponding key is present in the dictionary, that means there is information present there that
+        # needs to be appended. If no, a blank list is already initialized in the previous statement
         if block_key in blocks:
             block_data = blocks[block_key]
 
-        # A particular situation in Block X300. It is need to propagate into its
-        # sequentially down child the X300 index. So, we keep the value here, to
-        # propagate the same index into the immediatelly down childs
+        # A particular situation in Block X300. It is need to propagate into its sequentially down child the X300
+        # index. So, we keep the value here, to propagate the same index into the immediatelly down childs
         if block_key == "X300":
             x300_index = line_data[2]
 
