@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f16521d5-14b0-4c89-b40b-fd58a8dc0b6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tpconverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/tpconverter.py" afterDir="false" />
-    </list>
+    <list default="true" id="f16521d5-14b0-4c89-b40b-fd58a8dc0b6f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,21 +121,5 @@
       <screen x="1366" y="0" width="2560" height="1440" />
     </state>
     <state x="2332" y="547" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592661870407" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/module/tpconverter.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/module/tpconverter.py</url>
-          <line>131</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
