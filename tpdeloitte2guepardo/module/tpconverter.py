@@ -18,6 +18,9 @@ __status__ = "Production"
 import mimetypes
 import os.path
 
+import pandas as pd
+import xlsxwriter
+
 #######################################################################################################################
 # --- CONSTANTS
 #######################################################################################################################
@@ -68,6 +71,7 @@ def convert_file(origin_file, target_folder):
     # Everything ok! Let's do the conversion
     blocks = make_conversion(origin_file, target_folder)
     export_data_to_file(blocks, target_folder)
+    export_data_to_excel(blocks, target_folder)
 
 
 def export_data_to_file(blocks, target_folder):
@@ -77,8 +81,11 @@ def export_data_to_file(blocks, target_folder):
     # a specific file
     for block_key in blocks:
 
+        # Generate the target file name
+        file_name = target_folder + block_key + ".txt"
+
         # Update a file, with the name equals to the Block Key
-        file = open(target_folder + block_key + ".txt", "wt")
+        file = open(file_name, "wt")
 
         # Read the data previously splitted
         block_data = blocks[block_key]
@@ -88,10 +95,35 @@ def export_data_to_file(blocks, target_folder):
             file.write(SEPARATOR.join(line_data))
 
 
+def export_data_to_excel(blocks, target_folder):
+    """ Export each block in the dictionary for a specific Excel Spreadsheet  """
+
+    # Iterate over all the block keys, and export the list with all lines for
+    # a specific file
+    for block_key in blocks:
+        # Generate the target file name
+        file_name = target_folder + block_key + ".xls"
+
+        # Read the data previously splitted
+        block_data = blocks[block_key]
+
+        # Create a Pandas Dataframe with the data
+        df = pd.DataFrame(block_data)
+
+        # Create a Writer to export the data to an Excel Spreadsheet
+        writer = pd.ExcelWriter(file_name, engine="xlsxwriter")
+
+        # Export the data to the spreadsheet
+        df.to_excel(writer, sheet_name='Data', index=False)
+
+        # Save the data to the file
+        writer.save()
+
+
 def make_conversion(origin_file, target_folder):
     """
      Make the conversion to the final formats, considering that the original
-     file is already synthatically checked
+     file is already syntactically checked
     """
 
     # Open the source file
@@ -129,6 +161,9 @@ def make_conversion(origin_file, target_folder):
         # In the block X310, we propagate the X300 index in the childs
         if block_key == "X310":
             line_data.insert(2, x300_index)
+
+        # Remove the first field, that is the block identifier. This is not necessary in the final file
+        del line_data[0:2]
 
         # Append the raw line data into the dictionary block
         block_data.append(line_data)
