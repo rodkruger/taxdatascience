@@ -149,7 +149,7 @@ def export_data_to_excel(blocks, target_folder, template_headers):
             # Let the template_header and colums with the same size. Pandas throws an exception if they are different
             while len(template_header) < len(df.columns):
                 template_header.append("No_name")
-        
+
             while len(template_header) > len(df.columns):
                 del template_header[-1]
 

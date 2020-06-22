@@ -140,15 +140,4 @@
     </state>
     <state x="2332" y="547" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.2560.1440@1366.0.2560.1440" timestamp="1592832163848" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/module/tpconverter.py</url>
-          <line>153</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
