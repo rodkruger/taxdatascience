@@ -205,13 +205,13 @@ def make_conversion(origin_file):
         if block_key in blocks:
             block_data = blocks[block_key]
 
-        # A particular situation in Block X300. It is need to propagate into its sequentially down child the X300
-        # index. So, we keep the value here, to propagate the same index into the immediatelly down childs
-        if block_key == "X300":
+        # A particular situation in Block X300 and X320. It is need to propagate into its sequentially down child the
+        # X300 index. So, we keep the value here, to propagate the same index into the immediatelly down childs
+        if block_key == "X300" or block_key == "X320":
             x300_index = line_data[2]
 
-        # In the block X310, we propagate the X300 index in the childs
-        if block_key == "X310":
+        # In the blocks X310 and 330, we propagate the X300 / 320 index in the childs
+        if block_key == "X310" or block_key == "X330":
             line_data.insert(2, x300_index)
 
         # Remove the first field, that is the block identifier. This is not necessary in the final file
